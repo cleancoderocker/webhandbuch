@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Anmeldeformular</title>
+</head>
+
+<body>
+  <form action="/services/handle-form" method="POST">
+    <fieldset>
+      <legend>Angaben zur Person</legend>
+      <label>
+        Vorname:
+        <input type="text" name="firstname" size="20" maxlength="50" /> </label>
+      <br />
+      ...
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Fragebogen</legend>
+      <p>
+        <label for="browser">
+          Welchen Browser nutzen Sie?
+        </label>
+        <select id="browser" name="browser">
+          <option value="chrome">Google Chrome</option>
+          <option value="edge">Microsoft Edge</option>
+          <option value="firefox">Mozilla Firefox</option>
+          <option value="opera">Opera</option>
+          <option value="safari">Safari</option>
+        </select>
+      </p>
+      <p>
+        Gefällt Ihnen unsere Website?
+        <br />
+        <label>
+          <input type="radio" name="feedback" value="yes" />
+          Ja
+        </label>
+        <label>
+          <input type="radio" name="feedback" value="no" />
+          Nein
+        </label>
+      </p>
+      <p>
+        <br />
+        <label for="improvements">
+          Haben Sie Verbesserungsvorschläge?
+        </label>
+        <br />
+        <textarea id="improvements" rows="5" cols="50"> </textarea>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="newsletter" />
+          Möchten Sie sich für unseren Newsletter anmelden?
+        </label>
+      </p>
+    </fieldset>
+    <input type="submit" value="Formular abschicken" />
+  </form>
+</body>
+
+</html>

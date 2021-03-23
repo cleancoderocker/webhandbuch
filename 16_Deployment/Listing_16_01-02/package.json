@@ -1,0 +1,14 @@
+{
+  "name": "webservice-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "start": "node ./start.js"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
+  }
+}

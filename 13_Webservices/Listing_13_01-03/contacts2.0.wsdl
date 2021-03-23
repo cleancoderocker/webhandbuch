@@ -1,0 +1,56 @@
+<description
+  xmlns="http://www.w3.org/ns/wsdl"
+  targetNamespace="http://www.example.com.com/ContactsService"
+  xmlns:tns="http://www.example.com.com/ContactsService"
+  xmlns:stns="http://www.example.com.com/ContactsService/schema"
+  xmlns:wsoap="http://www.w3.org/ns/wsdl/soap"
+  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsdlx="http://www.w3.org/ns/wsdl-extensions">
+
+  <types>
+    <xs:schema
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      targetNamespace="http://www.example.com/ContactsService/schema"
+      xmlns="http://www.example.com/ContactsService/schema" >
+
+      <!-- Aufbau der Anfrage -->
+      <xs:element name="contactServiceRequest" type="xs:string" />
+    
+	  <!-- Aufbau der Antwort -->
+      <xs:element name="contactServiceResponse" type="getContextResponseType" />
+      <xs:complexType name="getContextResponseType" >
+        <xs:sequence>
+          <xs:element name="username" type="xs:string" />
+          <xs:element name="email" type="xs:string" />
+          <xs:element name="firstName" type="xs:string" />
+          <xs:element name="lastName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+ 
+  <!-- Interface des Webservices -->
+  <interface name="ContactsServiceInterface">
+    <operation name="getContact">
+      <input messageLabel="In" element="stns:contactServiceRequest" />
+      <output messageLabel="Out" element="stns:contactServiceResponse"/>
+    </operation>
+  </interface>
+
+  <!-- Binding des Interfaces an Implementierung -->
+  <binding name="ContactsServiceInterfaceSOAPBinding" 
+    interface="tns:ContactsServiceInterface"
+    type="http://www.w3.org/ns/wsdl/soap"
+    wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP/">
+    <operation ref="tns:getContact" wsoap:mep="http://www.w3.org/2003/05/soap/mep/soap-response"/>
+  </binding>
+
+  <!-- Service und Endpoint  -->
+  <service name="ContactService"
+    interface="tns:ContactServiceInterface">
+    <endpoint name="ContactServiceEndpoint" 
+      binding="tns:ContactsServiceInterfaceSOAPBinding"
+      address="http://www.example.com/ContactsService"/>
+  </service>
+
+</definitions>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabellen formatieren</title>
+  <style type="text/css">
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  table {
+    /* Dünner, durchgehender, schwarzer Rand */
+    border: thin solid #000000;
+
+    /* Alternativ, aber mehr Schreibarbeit: */
+    /* 
+    border-width: thin;
+    border-style: solid;
+    border-color: #000000;
+    */
+
+    /* Alternativ, aber noch mehr Schreibarbeit: */
+    /*
+    border-top-width: thin;
+    border-right-width: thin;
+    border-bottom-width: thin;
+    border-left-width: thin;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #000000;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    border-left-color: #000000;
+    */
+
+    /* Keine doppelten Ränder 
+       für angrenzende Zellen */
+    border-collapse: collapse;
+  }
+
+  /* Tabellenüberschriften */
+  th {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: left;
+  }
+
+  /* Tabellenüberschriften und Zellen */
+  th, td {
+    padding: 11px;
+  }
+
+  /* Ungerade Zeilen */
+  tr:nth-child(odd) {
+    background-color: #CCCCCC;
+  }
+
+  /* Gerade */
+  tr:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+
+  /* Erste Spalte der Tabelle */
+  td:first-child {
+    font-weight: bold;
+  }
+
+  /* Zweite Spalte der Tabelle */
+  td:nth-child(2) {
+    font-style: italic;
+  }
+
+  /* Ditte Spalte der Tabelle */
+  td:nth-child(3) {
+    text-align: right;
+  }
+  
+  </style>
+</head>
+<body>
+  <h1>Empfehlenswerte Bücher zu CSS</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Autor</th>
+        <th>Titel</th>
+        <th>Erscheinungsjahr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Keith J. Grant</td>
+        <td>CSS in Depth</td>
+        <td>2018</td>
+      </tr>
+      <tr>
+        <td>Eric A. Meyer</td>
+        <td>CSS Pocket Reference: Visual Presentation for the Web</td>
+        <td>2018</td>
+      </tr>
+      <tr>
+        <td>Eric Meyer & Estelle Weyl</td>
+        <td>CSS: The Definitive Guide: Visual Presentation for the Web</td>
+        <td>2017</td>
+      </tr>
+      <tr>
+        <td>Lea Verou</td>
+        <td>CSS Secrets: Better Solutions to Everyday Web Design Problems</td>
+        <td>2014</td>
+      </tr>
+      <tr>
+        <td>Peter Gasston</td>
+        <td>The Book of CSS3: A Developer's Guide to the Future of Web Design</td>
+        <td>2014</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

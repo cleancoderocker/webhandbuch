@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Dateiexplorer</title>
+</head>
+
+<body>
+  <h3 id="tree_label">
+    Dateiexplorer
+  </h3>
+  <ul role="tree" aria-labelledby="tree_label">
+    <li role="treeitem" aria-expanded="false"> <span>
+        Meine Dateien
+      </span>
+      <ul role="group">
+        <li role="treeitem"> datei1.pdf
+        </li>
+        <li role="treeitem">
+          datei2.pdf
+        </li>
+        <li role="treeitem" aria-expanded="false">
+          <span>
+            Dokumente
+          </span>
+          <ul role="group">
+            <li role="treeitem"> datei1.docx
+            </li>
+            <li role="treeitem">
+              datei2.docx
+            </li>
+            <li role="treeitem">
+              datei3.docx
+            </li>
+          </ul>
+        </li>
+        <li role="treeitem" aria-expanded="false">
+          <span>
+            Bilder
+          </span>
+          <ul role="group">
+            <li role="treeitem"> cat.jpg
+            </li>
+            <li role="treeitem">
+              dog.jpg
+            </li>
+            <li role="treeitem"> bird.jpg
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>

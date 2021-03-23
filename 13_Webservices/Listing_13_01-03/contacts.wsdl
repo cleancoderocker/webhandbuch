@@ -1,0 +1,53 @@
+<definitions name="ContactService"
+   targetNamespace="http://www.example.com/wsdl/ContactService.wsdl"
+   xmlns="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+   xmlns:tns="http://www.example.com/wsdl/ContactService.wsdl"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ 
+   <message name="GetContactRequest">
+      <part name="username" type="xsd:string"/>
+   </message>
+
+   <message name="GetContactResponse">
+      <part name="username" type="xsd:string"/>
+      <part name="email" type="xsd:string"/>
+      <part name="firstName" type="xsd:string"/>
+      <part name="firstName" type="xsd:string"/>
+   </message>
+ 
+   <portType name="Contact_PortType">
+      <operation name="getContact">
+         <input message="tns:GetContactRequest"/>
+         <output message="tns:GetContactResponse"/>
+      </operation>
+   </portType>
+ 
+  <binding name="Contact_Binding" type="tns:Contact_PortType">
+    <soap:binding style="rpc"
+      transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getContact">
+      <soap:operation soapAction="getContact"/>
+      <input>
+        <soap:body
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+          namespace="urn:example:contactservice"
+          use="encoded"/>
+      </input>
+      <output>
+        <soap:body
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+          namespace="urn:example:contactservice"
+          use="encoded"/>
+      </output>
+    </operation>
+  </binding>
+ 
+  <service name="Contact_Service">
+    <documentation>WSDL file for Contact Service</documentation>
+    <port binding="tns:Contact_Binding" name="Contact_Port">
+       <soap:address location="http://www.example.com/GetContact/" />
+    </port>
+  </service>
+
+</definitions>

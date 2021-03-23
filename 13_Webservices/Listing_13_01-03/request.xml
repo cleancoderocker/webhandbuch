@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<soap:Envelope
+  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:ns = "http://www.example.com">
+  <soap:Header>
+    <ns:dateAndTime>2020-09-15T15:30:00</m:dateAndTime>
+  </soap:Header>
+  <soap:Body>
+    <ns:GetContactRequest>
+      <ns:username>maxmustermann</ns:username>
+    </ns:GetContactRequest>
+  </soap:Body>
+</soap:Envelope>

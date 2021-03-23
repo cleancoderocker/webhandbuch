@@ -1,0 +1,49 @@
+{
+  "contacts": [
+    {
+      "firstname": "Max",
+      "lastname": "Mustermann",
+      "phone": {
+        "type": "mobile",
+        "number": "01234567"
+      },
+      "email": "max.mustermann@example.com",
+      "address": {
+        "street": "Musterstraße",
+        "number": 99,
+        "code": 12345,
+        "city": "Musterstadt"
+      }
+    },
+    {
+      "firstname": "Paula",
+      "lastname": "Mustermann",
+      "phone": {
+        "type": "mobile",
+        "number": "01234567"
+      },
+      "email": "paula.mustermann@example.com",
+      "address": {
+        "street": "Musterstraße",
+        "number": 99,
+        "code": 12345,
+        "city": "Musterstadt"
+      }
+    },
+    {
+      "firstname": "Peter",
+      "lastname": "Mustermann",
+      "phone": {
+        "type": "landline",
+        "number": "3456789"
+      },
+      "email": "max.mustermann@example.com",
+      "address": {
+        "street": "Musterstraße",
+        "number": 200,
+        "code": 12345,
+        "city": "Musterstadt"
+      }
+    }
+  ]
+}

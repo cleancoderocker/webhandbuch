@@ -1,0 +1,10 @@
+{
+  "id": "4",
+  "isbn": "978-3-8362-6453-2",
+  "title": "Node.js – Rezepte und Lösungen",
+  "author": {
+    "firstName": "Philip",
+    "lastName": "Ackermann",
+    "href": "https://www.philipackermann.de/api/authors/1"
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulare gestalten</title>
+  <style type="text/css">
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.9em;
+    }
+
+    form {
+      padding: 1em;
+      background: #f9f9f9;
+      border: 1px solid lightgrey;
+      margin: 2rem auto auto auto;
+      max-width: 600px;
+      border-radius: 5px;
+    }
+
+    form input {
+      margin-bottom: 1rem;
+      background: white;
+      border: 1px solid darkgray;
+    }
+
+    form button {
+      background: lightgrey;
+      padding: 0.8em;
+      border: 0;
+    }
+    
+    form button:hover {
+      background: deepskyblue;
+    }
+
+    label {
+      text-align: right;
+      display: block;
+      padding: 0.5em 1.5em 0.5em 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.7em;
+      margin-bottom: 0.5rem;
+    }
+
+    input:focus {
+      outline: 3px solid deepskyblue;
+    }
+
+    form {
+      overflow: hidden;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+    .form-row > label {
+      flex: 1;
+    }
+
+    .form-row > input {
+      flex: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <form>
+    <div class="form-row">
+      <label for="firstName">Vorname</label>
+      <input id="firstName" type="text">
+    </div>
+ 
+    <div class="form-row">
+      <label for="lastName">Nachname</label>
+      <input id="lastName" type="text">
+    </div>
+    
+    <div class="form-row">
+      <label for="birthday">Geburtsdatum</label>
+      <input id="birthday" type="date">
+    </div>
+ 
+    <div class="form-row">
+      <label for="email">E-Mail</label>
+      <input id="email" type="email">
+    </div>
+    
+    <div class="form-row">
+      <button>Abschicken</button>
+    </div>
+  </form>
+</body>
+</html>

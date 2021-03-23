@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts xmlns="https://xml.webhandbuch.de"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://xml.webhandbuch.de
+  https://www.webhandbuch.de/schema.xsd"
+>
+  <contact>
+    <firstname>Max</firstname>
+    <lastname>Mustermann</lastname>
+    <phone type="mobile">01234567</phone>
+    <email>max.mustermann@example.com</email>
+    <address>
+      <street>Musterstraße</street>
+      <number>99</number>
+      <code>12345</code>
+      <city>Musterstadt</city>
+    </address>
+  </contact>
+  <contact>
+    <firstname>Paula</firstname>
+    <lastname>Mustermann</lastname>
+    <phone type="mobile">01234567</phone>
+    <email>paula.mustermann@example.com</email>
+    <address>
+      <street>Musterstraße</street>
+      <number>99</number>
+      <code>12345</code>
+      <city>Musterstadt</city>
+    </address>
+  </contact>
+  <contact>
+    <firstname>Peter</firstname>
+    <lastname>Mustermann</lastname>
+    <phone type="landline">3456789</phone>
+    <email>peter.mustermann@example.com</email>
+    <address>
+      <street>Musterstraße</street>
+      <number>200</number>
+      <code>12345</code>
+      <city>Musterstadt</city>
+    </address>
+  </contact>
+</contacts>

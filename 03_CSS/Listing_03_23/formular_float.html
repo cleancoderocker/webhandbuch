@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulare gestalten</title>
+  <style type="text/css">
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.9em;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    form {
+      padding: 1em;
+      background: #f9f9f9;
+      border: 1px solid lightgrey;
+      margin: 2rem auto auto auto;
+      max-width: 600px;
+	  border-radius: 5px;
+      overflow: hidden;
+    }
+
+    form input {
+      margin-bottom: 1rem;
+      background: white;
+      border: 1px solid darkgray;
+    }
+
+    form button {
+      background: lightgrey;
+      padding: 0.8em;
+      border: 0;
+    }
+
+    form button:hover {
+      background: deepskyblue;
+    }
+
+    label {
+      text-align: right;
+      display: block;
+      padding: 0.5em 1.5em 0.5em 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.7em;
+      margin-bottom: 0.5rem;
+    }
+
+    input:focus {
+      outline: 3px solid deepskyblue;
+    }
+
+    label {
+      float: left;
+      width: 200px;
+    }
+
+    input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+
+    button {
+      float: right;
+      width: calc(100% - 200px);
+    }
+
+  </style>
+</head>
+<body>
+  <form>
+    <label for="firstName">Vorname</label>
+    <input id="firstName" type="text">
+ 
+    <label for="lastName">Nachname</label>
+    <input id="lastName" type="text">
+    
+    <label for="birthday">Geburtsdatum</label>
+    <input id="birthday" type="date">
+ 
+    <label for="email">E-Mail</label>
+    <input id="email" type="email">
+    
+    <button>Abschicken</button>
+</form>
+</body>
+</html>
