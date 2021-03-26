@@ -1,0 +1,16 @@
+table.contactTable {
+  border-collapse: collapse;
+}
+
+table.contactTable td,
+table.contactTable th {
+  padding: 5px 20px;
+}
+
+table.contactTable th {
+  border-bottom: 2px solid black;
+}
+
+table.contactTable tbody tr:nth-child(2n) {
+  background-color: lightgray;
+}
