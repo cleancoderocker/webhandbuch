@@ -5,18 +5,18 @@ let icon = null;
 
 switch (testResult) {
   case 0:
-    icon = 'pass.tif';
+    icon = 'pass.png';
     break;
   case 1:
-    icon = 'info.tif';
+    icon = 'info.png';
     break;
   case 2:
-    icon = 'warning.tif';
+    icon = 'warning.png';
     break;
   case 3:
-    icon = 'error.tif';
+    icon = 'error.png';
     break;
   default:
-    icon = 'unknown.tif';
+    icon = 'unknown.png';
 }
 testResultElement.src = 'img/' + icon;
