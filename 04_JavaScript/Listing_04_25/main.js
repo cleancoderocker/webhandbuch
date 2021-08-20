@@ -2,7 +2,7 @@ const book = {
     title: 'Schrödinger programmiert Java',
     price: 44.90,
     author: 'Philip Ackermann',
-    isbn: '978-3836245838978-3836245838',
+    isbn: '978-3-8362-7272-8',
     printDescription() {
         console.log(`${this.author}: ${this.title}`);
     }
