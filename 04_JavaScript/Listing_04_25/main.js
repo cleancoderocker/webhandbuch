@@ -7,8 +7,8 @@ const book = {
         console.log(`${this.author}: ${this.title}`);
     }
 }
-console.log(item.title);   // "Schrödinger programmiert Java"
-console.log(item.price);   // 44.90
-console.log(item.author);  // "Philip Ackermann"
-console.log(item.isbn);    // "978-3836245838"
-item.printDescription();   // "Philip Ackermann: Schrödinger programmiert Java"
+console.log(book.title);   // "Schrödinger programmiert Java"
+console.log(book.price);   // 44.90
+console.log(book.author);  // "Philip Ackermann"
+console.log(book.isbn);    // "978-3-8362-7272-8"
+book.printDescription();   // "Philip Ackermann: Schrödinger programmiert Java"
