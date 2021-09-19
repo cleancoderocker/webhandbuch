@@ -9,6 +9,7 @@ const requestHandler = (request, response) => {
   console.log(`Angefragte URL: ${request.url}`);
   if (request.url === '/static/html/index.html' || request.url == '/') {
     console.log('Lade HTML-Datei');
+    const pathToFile = path.join(__dirname, 'static', 'html', 'index.html');
     fs.readFile(pathToFile, (error, data) => {
       if (error) {
         console.error(error);
@@ -20,9 +21,9 @@ const requestHandler = (request, response) => {
         response.end(data.toString());
       }
     });
-  } else if (request.url === '/static/css/styles.css') {
+  } else if (request.url === '/css/styles.css' || request.url === '/static/css/styles.css') {
     console.log('Lade CSS-Datei');
-    const pathToFile = path.join(__dirname, request.url);
+    const pathToFile = path.join(__dirname, 'static', 'css', 'styles.css');
     fs.readFile(pathToFile, (error, data) => {
       if (error) {
         console.error(error);
