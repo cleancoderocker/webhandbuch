@@ -1,0 +1,15 @@
+ul {
+  font-family: Helvetica, sans-serif;
+}
+ul li {
+  /* 1. Verschachtelung */
+  background-color: #333333;
+  line-height: 50px;
+}
+ul li li {
+  /* 2. Verschachtelung */
+  background-color: #999999;
+  line-height: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

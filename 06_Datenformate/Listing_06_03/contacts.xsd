@@ -22,7 +22,7 @@
                   <xs:sequence>
                     <xs:element type="xs:string" name="street"/>
                     <xs:element type="xs:int" name="number"/>
-                    <xs:element type="xs:int" name="code"/>
+                    <xs:element type="xs:string" name="code"/>
                     <xs:element type="xs:string" name="city"/>
                   </xs:sequence>
                 </xs:complexType>

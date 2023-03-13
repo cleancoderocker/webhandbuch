@@ -1,0 +1,10 @@
+$basewidth: 100%;
+
+article {  
+  float: left;  
+  width: calc(600px / 960px) * $basewidth;
+} 
+aside {  
+  float: right;  
+  width: calc(300px / 960px) * $basewidth;  
+}

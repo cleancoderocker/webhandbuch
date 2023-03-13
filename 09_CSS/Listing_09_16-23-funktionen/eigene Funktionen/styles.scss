@@ -1,0 +1,19 @@
+@function sum($numbers...) {
+  $sum: 0;
+  @each $number in $numbers {
+    $sum: $sum + $number;
+  }
+  @return $sum;
+}
+
+.width-180px {
+  width: sum(50px, 30px, 100px);
+}
+
+.width-200px {
+  width: sum(50px, 50px, 50px, 50px);
+}
+
+.width-300px {
+  width: sum(100px, 100px, 100px);
+}

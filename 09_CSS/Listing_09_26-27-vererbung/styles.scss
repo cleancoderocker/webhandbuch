@@ -1,0 +1,23 @@
+$font: Helvetica, sans-serif;
+$primary-color: #333333;
+$secondary-color: #999999;
+
+.button-base {
+  color: $primary-color;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: $font;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-special {
+  @extend .button-base;
+  background-color: $secondary-color;
+}
+
+.button-submit {
+  @extend .button-base;
+  border: thin solid $secondary-color;
+}

@@ -1,0 +1,30 @@
+// Importieren der benötigten Sass-Module
+@use "sass:color";
+@use "sass:math";
+@use "sass:string";
+
+// Verwendung einer Funktion
+// aus dem "sass:color"-Modul
+$color1: #ffff00;
+$color2: #0000ff;
+
+h1 {
+  background-color: color.mix($color1, $color2);
+}
+
+// Verwendung einer Funktion
+// aus dem "sass:math"-Modul
+$width1: 200px;
+$width2: 500px;
+
+.someClass {
+  width: math.max($width1, $width2);
+}
+
+// Verwendung einer Funktion
+// aus dem "sass:string"-Modul
+$fontFamily: Verdana;
+
+body {
+  font-family: string.to-lower-case($fontFamily);
+}

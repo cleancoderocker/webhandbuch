@@ -1,0 +1,21 @@
+@function sum($numbers...) {
+  $sum: 0;
+  @each $number in $numbers {
+    $sum: $sum + $number;
+  }
+  @return $sum;
+}
+
+$value-list: (
+  (50px, 30px, 100px), 
+  (50px, 50px, 50px, 50px),
+  (100px, 100px, 100px)
+);
+
+@each $values in $value-list {
+  $sum: sum($values...);
+  @debug(Die Variable $sum hat aktuell diesen Wert: $sum);
+  .width-#{$sum} {
+    width: $sum;
+  } 
+}
