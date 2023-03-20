@@ -1,0 +1,16 @@
+@mixin important-marker {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid yellow;
+}
+
+.error {
+  @include important-marker;
+  background-color: blue;
+}
+
+.warning {
+  @include important-marker;
+  background-color: yellow;
+}

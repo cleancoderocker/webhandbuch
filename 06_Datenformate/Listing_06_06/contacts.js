@@ -9,7 +9,7 @@ const person = {
 	"address": {
 	  "street": "Musterstraße",
 	  "number": 99,
-	  "code": 12345,
+	  "code": "12345",
 	  "city": "Musterstadt"
 	}
 };  
@@ -21,5 +21,5 @@ console.log(person.phone.number);   // "01234567"
 console.log(person.email);          // "max.mustermann@example.com"
 console.log(person.address.street); // "Musterstraße"
 console.log(person.address.number); // 99
-console.log(person.address.code);   // 12345
+console.log(person.address.code);   // "12345"
 console.log(person.address.city);   // "Musterstadt"

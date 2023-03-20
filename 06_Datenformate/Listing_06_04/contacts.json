@@ -11,7 +11,7 @@
       "address": {
         "street": "Musterstraße",
         "number": 99,
-        "code": 12345,
+        "code": "12345",
         "city": "Musterstadt"
       }
     },
@@ -26,7 +26,7 @@
       "address": {
         "street": "Musterstraße",
         "number": 99,
-        "code": 12345,
+        "code": "12345",
         "city": "Musterstadt"
       }
     },
@@ -41,7 +41,7 @@
       "address": {
         "street": "Musterstraße",
         "number": 200,
-        "code": 12345,
+        "code": "12345",
         "city": "Musterstadt"
       }
     }

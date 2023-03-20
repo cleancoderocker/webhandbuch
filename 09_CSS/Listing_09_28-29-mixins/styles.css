@@ -1,0 +1,17 @@
+.error {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid yellow;
+  background-color: blue;
+}
+
+.warning {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=styles.css.map */

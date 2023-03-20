@@ -1,0 +1,18 @@
+:root {
+  --font: "Helvetica, sans-serif";
+  --primary-color: #333333;
+  --secondary-color: #999999;
+}
+
+body {
+  font: 100% var(--font);
+  color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--secondary-color);
+}

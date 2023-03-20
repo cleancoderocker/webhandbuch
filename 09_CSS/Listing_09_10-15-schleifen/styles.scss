@@ -1,0 +1,32 @@
+$icons: error, warning, info;
+
+/* @each-Schleife */
+@each $icon in $icons {
+  .icon-#{$icon} {
+    background-image: url('/icons/#{$icon}.png');
+  }   
+}
+
+/* @for-Schleife */
+@for $i from 1 to 6 {
+  .column-i-#{$i} {
+    width: calc(100% / $i);
+  }
+}
+
+@for $j from 1 through 6 {
+  .column-j-#{$j} {
+    width: calc(100% / $j);
+  }
+}
+
+/* @while-Schleife */
+$counter: 0;
+
+@while $counter < 5 {
+  .width-#{$counter} {
+    width: (10 * $counter) + px;
+  }
+
+  $counter: $counter + 1;
+}

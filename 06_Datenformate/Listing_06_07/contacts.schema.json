@@ -38,7 +38,7 @@
                 "type": "integer"
               },
               "code": {
-                "type": "integer"
+                "type": "string"
               },
               "city": {
                 "type": "string"

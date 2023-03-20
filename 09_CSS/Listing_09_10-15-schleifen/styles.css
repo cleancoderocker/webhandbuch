@@ -1,0 +1,80 @@
+/* @each-Schleife */
+.icon-error {
+  background-image: url("/icons/error.png");
+}
+
+.icon-warning {
+  background-image: url("/icons/warning.png");
+}
+
+.icon-info {
+  background-image: url("/icons/info.png");
+}
+
+/* @for-Schleife */
+.column-i-1 {
+  width: 100%;
+}
+
+.column-i-2 {
+  width: 50%;
+}
+
+.column-i-3 {
+  width: 33.3333333333%;
+}
+
+.column-i-4 {
+  width: 25%;
+}
+
+.column-i-5 {
+  width: 20%;
+}
+
+.column-j-1 {
+  width: 100%;
+}
+
+.column-j-2 {
+  width: 50%;
+}
+
+.column-j-3 {
+  width: 33.3333333333%;
+}
+
+.column-j-4 {
+  width: 25%;
+}
+
+.column-j-5 {
+  width: 20%;
+}
+
+.column-j-6 {
+  width: 16.6666666667%;
+}
+
+/* @while-Schleife */
+.width-0 {
+  width: 0px;
+}
+
+.width-1 {
+  width: 10px;
+}
+
+.width-2 {
+  width: 20px;
+}
+
+.width-3 {
+  width: 30px;
+}
+
+.width-4 {
+  width: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
