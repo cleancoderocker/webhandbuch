@@ -1,5 +1,4 @@
-/* 1: Allgemeine CSS-Regeln */
-
+/* 1: General CSS rules */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,7 +13,7 @@ footer,
   margin: 1em;
 }
 
-/* 2: Definition der Grid Areas */
+/* 2: Definition of grid areas */
 header {
   grid-area: header;
 }
@@ -31,13 +30,13 @@ footer {
   grid-area: footer;
 }
 
-/* 3: Definition des Grid-Layouts */
+/* 3: Definition of the grid layouts */
 .grid,
 .subgrid {
   display: grid;
 }
 
-/* 4: Layout für mobile Endgeräte */
+/* 4: Layout for mobile end devices */
 .grid {
   grid-template-areas:
     'header'
@@ -47,7 +46,7 @@ footer {
   width: 100%;
 }
 
-.subgrid {
+.sub'rid {
   width: 90%;
 }
 
@@ -56,14 +55,14 @@ footer {
   padding: 1rem;
 }
 
-/* 5: Layout für größere mobile Endgeräte */
+/* 5: Layout for larger mobile end devices */
 @media screen and (min-width: 576px) {
   .subgrid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* 6: Layout für Endgeräte mit größerem Bildschirm */
+/* 6: Layout for devices with larger screens */
 @media screen and (min-width: 992px) {
   .grid {
     grid-template-areas:
