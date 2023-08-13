@@ -23,33 +23,33 @@ function Form({ onSave }) {
       }}
     >
       <label>
-        Vorname:{' '}
-        <input
+        First name:
+        <input 
           type="text"
           name="firstName"
           value={contact.firstName}
-          onChange={handleChange}
+          onChange={handleChange} 
         />
       </label>
       <label>
-        Nachname:{' '}
+        Last name:
         <input
-          type="text"
+          type="text" 
           name="lastName"
           value={contact.lastName}
-          onChange={handleChange}
+          onChange={handleChange} 
         />
       </label>
       <label>
-        E-Mail:{' '}
+        Email:
         <input
           type="text"
           name="email"
           value={contact.email}
-          onChange={handleChange}
+          onChange={handleChange} 
         />
       </label>
-      <button type="submit">speichern</button>
+      <button type="submit">write</button>
     </form>
   );
 }

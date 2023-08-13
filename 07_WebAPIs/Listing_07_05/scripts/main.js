@@ -1,58 +1,53 @@
 const persons = [
   {
-    firstName: 'Max',
-    lastName: 'Mustermann',
+    firstName: 'John',
+    lastName: 'Doe',
     position: 'CTO'
   },
   {
-    firstName: 'Moritz',
-    lastName: 'Mustermann',
+    firstName: 'James',
+    lastName: 'Doe',
     position: 'CEO'
   },
   {
     firstName: 'Peter',
-    lastName: 'Mustermann',
+    lastName: 'Doe',
     position: 'Software Developer'
   }
 ];
-
 function createTable(persons) {
-  // Container-Element selektieren
+  // Select container element
   const container = document.getElementById('container');
-  // Tabelle erstellen
-  const table = document.createElement('table');
-  // Tabellenüberschrfit erstellen
+  // Create table
+  const table = document.createElement('table');// Create table heading
   const thead = document.createElement('thead');
-  thead.innerHTML = '<tr><th>Vorname</th><th>Nachname</th><th>Position</th>';
-
-  // Tabellenkörper erstellen
+  thead.innerHTML = '<tr><th>First Name</th><th>Last Name</th><th>Position</th > ';
+  // Create table body
   const tbody = document.createElement('tbody');
   for (let i = 0; i < persons.length; i++) {
     const person = persons[i];
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td>
-        ${person.firstName}
-      </td>
-      <td>
-        ${person.lastName}
-      </td>
-      <td>
-        ${person.position}
-      </td>
-    `;
+  <td>
+  ${person.firstName}
+  </td>
+  <td>
+  ${person.lastName}
+  </td>
+  <td>
+  ${person.position}
+  </td>
+  `;
     tbody.appendChild(tr);
   }
-
-  // Tabellenüberschrift zu Tabelle hinzufügen
+  // Add table heading to table
   table.appendChild(thead);
-  // Tabellenkörper zu Tabelle hinzufügen
+  // Add table body to table
   table.appendChild(tbody);
-  // Tabelle zu Container hinzufügen
+  // Add table to container
   container.appendChild(table);
 }
-
-// Registrierung des Eventlisteners
+// Registration of the event listener
 document.addEventListener('DOMContentLoaded', (event) => {
   createTable(persons);
 });

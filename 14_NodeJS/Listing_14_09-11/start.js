@@ -6,7 +6,7 @@ const HOST = 'localhost';
 const PORT = 8000;
 
 const requestHandler = (request, response) => {
-  console.log(`Angefragte URL: ${request.url}`);
+  console.log(`URL: ${request.url}`);
   if (request.url === '/static/html/index.html' || request.url == '/') {
     console.log('Lade HTML-Datei');
     const pathToFile = path.join(__dirname, 'static', 'html', 'index.html');
@@ -14,7 +14,7 @@ const requestHandler = (request, response) => {
       if (error) {
         console.error(error);
         response.writeHead(404);
-        response.end('Fehler beim Laden der HTML-Datei');
+        response.end('Error loading the HTML file');
       } else {
         response.setHeader('Content-Type', 'text/html');
         response.writeHead(200);
@@ -22,13 +22,13 @@ const requestHandler = (request, response) => {
       }
     });
   } else if (request.url === '/css/styles.css' || request.url === '/static/css/styles.css') {
-    console.log('Lade CSS-Datei');
+    console.log('Loading CSS file');
     const pathToFile = path.join(__dirname, 'static', 'css', 'styles.css');
     fs.readFile(pathToFile, (error, data) => {
       if (error) {
         console.error(error);
         response.writeHead(404);
-        response.end('Fehler beim Laden der CSS-Datei');
+        response.end('Error loading the CSS file');
       } else {
         response.setHeader('Content-Type', 'text/css');
         response.writeHead(200);
@@ -37,12 +37,12 @@ const requestHandler = (request, response) => {
     });
   } else {
     response.writeHead(404);
-	response.end('Fehler beim Laden der Datei');
+    response.end('Error loading the CSS file');
   }
 };
 
 const server = http.createServer(requestHandler);
 
 server.listen(PORT, HOST, () => {
-  console.log(`Webserver läuft unter http://${HOST}:${PORT}`);
+  console.log(`Webserver running at http://${HOST}:${PORT}`);
 });

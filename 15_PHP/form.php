@@ -1,9 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Anmeldeformular</title>
+    <title>Registration form</title>
 </head>
 <body>
+<form action="" method="POST">
+    <fieldset>
+        <legend>Personal details</legend>
+        <label>
+            First name:
+            <input type="text" name="firstname" size="20" maxlength="50"/>
+        </label>
+        <br/>
+        <label>
+            Last name:
+            <input type="text" name="lastname" value="<?php
+            echo $formData['lastname'] ?? '';
+            ?>" size="30" maxlength="70"/>
+        </label>
+        <br/>
+        <label>
+            Email:
+            <input type="email" name="email" value="<?php
+            echo $formData['email'] ?? '';
+            ?>" size="30" maxlength="70"/>
+        </label>
+        <br/>
+        <label>
+            Password:
+            <input type="password" name="password" size="20" maxlength="30"/>
+        </label>
+        <br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Questionnaire</legend>
+        <p>
+            <label for="browser">
+                Which browser are you using?
+            </label>
+            <select id="browser" name="browser">
+                <option value="chrome" <?php selected( 'chrome', $formData['browser'] ?? '' ); ?>>Google Chrome</option>
+                <option value="edge" <?php selected( 'edge', $formData['browser'] ?? '' ); ?>>Microsoft Edge</option>
+                <option value="firefox" <?php selected( 'firefox', $formData['browser'] ?? '' ); ?>>Mozilla Firefox
+                </option>
+                <option value="opera" <?php selected( 'opera', $formData['browser'] ?? '' ); ?>>Opera</option>
+                <option value="safari" <?php selected( 'safari', $formData['browser'] ?? '' ); ?>>Safari</option>
+            </select>
+        </p>
+        <p>
+            Do you like our website?
+            <br/>
+            <label>
+                <input type="radio" name="feedback" value="yes"
+                    <?php checked( true, $formData['feedback'] ?? '' ); ?>
+                />
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="feedback" value="no"
+                    <?php checked( false, $formData['feedback'] ?? '' ); ?>
+                />
+                No
+            </label>
+        </p>
+        <p>
+            <br/>
+            <label for="improvements">
+                Do you have any suggestions for improvement?
+            </label>
+            <br/>
+            <textarea id="improvements" name="improvements" rows="5" cols="50"><?php
+                echo $formData['improvements'] ?? '';
+                ?></textarea>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="newsletter"
+                    <?php checked( true, $formData['newsletter'] ?? '' ); ?>
+                />
+                Would you like to subscribe to our newsletter?
+            </label>
+        </p>
+    </fieldset>
+    <input type="submit" value="Send form"/>
+</form>
+</body>
+
 <?php
 define(
     'PASSWORD_SALT',
@@ -108,88 +191,4 @@ if ( ! empty( $_POST ) ) {
     }
 }
 ?>
-<form action="" method="POST">
-    <fieldset>
-        <legend>Angaben zur Person</legend>
-        <label>
-            Vorname:
-            <input type="text" name="firstname" value="<?php
-            echo $formData['firstname'] ?? '';
-            ?>" size="20" maxlength="50"/>
-        </label>
-        <br/>
-        <label>
-            Nachname:
-            <input type="text" name="lastname" value="<?php
-            echo $formData['lastname'] ?? '';
-            ?>" size="30" maxlength="70"/>
-        </label>
-        <br/>
-        <label>
-            E-Mail:
-            <input type="email" name="email" value="<?php
-            echo $formData['email'] ?? '';
-            ?>" size="30" maxlength="70"/>
-        </label>
-        <br/>
-        <label>
-            Passwort:
-            <input type="password" name="password" size="20" maxlength="30"/>
-        </label>
-        <br/>
-    </fieldset>
-    <br/>
-    <fieldset>
-        <legend>Fragebogen</legend>
-        <p>
-            <label for="browser">
-                Welchen Browser nutzen Sie?
-            </label>
-            <select id="browser" name="browser">
-                <option value="chrome" <?php selected( 'chrome', $formData['browser'] ?? '' ); ?>>Google Chrome</option>
-                <option value="edge" <?php selected( 'edge', $formData['browser'] ?? '' ); ?>>Microsoft Edge</option>
-                <option value="firefox" <?php selected( 'firefox', $formData['browser'] ?? '' ); ?>>Mozilla Firefox
-                </option>
-                <option value="opera" <?php selected( 'opera', $formData['browser'] ?? '' ); ?>>Opera</option>
-                <option value="safari" <?php selected( 'safari', $formData['browser'] ?? '' ); ?>>Safari</option>
-            </select>
-        </p>
-        <p>
-            Gefällt Ihnen unsere Website?
-            <br/>
-            <label>
-                <input type="radio" name="feedback" value="yes"
-                    <?php checked( true, $formData['feedback'] ?? '' ); ?>
-                />
-                Ja
-            </label>
-            <label>
-                <input type="radio" name="feedback" value="no"
-                    <?php checked( false, $formData['feedback'] ?? '' ); ?>
-                />
-                Nein
-            </label>
-        </p>
-        <p>
-            <br/>
-            <label for="improvements">
-                Haben Sie Verbesserungsvorschläge?
-            </label>
-            <br/>
-            <textarea id="improvements" name="improvements" rows="5" cols="50"><?php
-                echo $formData['improvements'] ?? '';
-                ?></textarea>
-        </p>
-        <p>
-            <label>
-                <input type="checkbox" name="newsletter"
-                    <?php checked( true, $formData['newsletter'] ?? '' ); ?>
-                />
-                Möchten Sie sich für unseren Newsletter anmelden?
-            </label>
-        </p>
-    </fieldset>
-    <input type="submit" value="Formular abschicken"/>
-</form>
-</body>
 </html>

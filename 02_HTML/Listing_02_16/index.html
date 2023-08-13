@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Anmeldeformular</title>
-</head>
-
-<body>
+  <head>
+    <title>Registration form</title>
+  </head>
+  <body>
     <form action="/services/handle-form" method="POST">
-        <fieldset>
-            <legend>Angaben zur Person</legend>
-            <label>
-                Vorname:
-                <input type="text" name="firstname" size="20" maxlength="50" />
-            </label>
-            2
-
-            <br /><label>
-                Nachname:
-                <input type="text" name="lastname" size="30" maxlength="70" />
-            </label>
-            <br />
-            <label>
-                E-Mail:
-                <input type="email" name="email" size="30" maxlength="70" />
-            </label>
-            <br />
-            <label>
-                Passwort:
-                <input type="password" name="password" size="20" maxlength="30" />
-            </label>
-            <br />
-        </fieldset>
-        <br />
-        <fieldset>
-            <legend>Fragebogen</legend>
-            <p>
-                <label for="browser">
-                    Welchen Browser nutzen Sie?
-                </label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Google Chrome</option>
-                    <option value="edge">Microsoft Edge</option>
-                    <option value="firefox">Mozilla Firefox</option>
-                    <option value="opera">Opera</option>
-                    <option value="safari">Safari</option>
-                </select>
-            </p>
-            <p>
-                Gefällt Ihnen unsere Website?
-                <br />
-                <label>
-                    <input type="radio" name="feedback" value="yes" />
-                    Ja
-                </label>
-                <label>
-                    <input type="radio" name="feedback" value="no" />
-                    Nein
-                </label>
-            </p>
-            <p>
-                <br />
-                <label for="improvements">
-                    Haben Sie Verbesserungsvorschläge?
-                </label>
-                <br />
-                <textarea id="improvements" rows="5" cols="50"> </textarea>
-            </p>
-            <p>
-                <label>
-                    <input type="checkbox" name="newsletter" />
-                    Möchten Sie sich für unseren Newsletter anmelden?
-                </label>
-            </p>
-        </fieldset>
-        <input type="submit" value="Formular abschicken" />
+      <fieldset>
+        <legend>Personal details</legend>
+        <label>
+          First name:
+          <input type="text" name="firstname" size="20" maxlength="50" />
+        </label>
+        <br>
+        <label>
+          Last name:
+          <input type="text" name="lastname" size="30" maxlength="70" />
+        </label>
+        <br>
+        <label>
+          Email:
+          <input type="email" name="email" size="30" maxlength="70" />
+        </label>
+        <br>
+        <label>
+          Password:
+          <input type="password" name="password" size="20" maxlength="30" />
+        </label>
+        <br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Questionnaire</legend>
+        <p>
+          <label for="browser">
+            Which browser do you use?
+          </label>
+          <select id="browser" name="browser">
+            <option value="chrome">Google Chrome</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="firefox">Mozilla Firefox</option>
+            <option value="opera">Opera</option>
+            <option value="safari">Safari</option>
+          </select>
+        </p>
+        <p>
+          Do you like our website?
+          <br>
+          <label>
+            <input type="radio" name="feedback" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="feedback" value="no" />
+            No
+          </label>
+        </p>
+        <p>
+          <br>
+          <label for="improvements">
+            Do you have any suggestions for improvement?
+          </label>
+          <br>
+          <textarea id="improvements" name="improvements" rows="5" cols="50">
+          </textarea>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="newsletter" />
+            Would you like to subscribe to our newsletter?
+          </label>
+        </p>
+      </fieldset>
+      <input type="submit" value="Submit form" />
     </form>
-</body>
-
+  </body>
 </html>

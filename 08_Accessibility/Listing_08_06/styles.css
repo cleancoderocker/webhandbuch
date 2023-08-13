@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+}
+th {
+    background-color: black;
+    color: white;
+}
+td {
+    background-color: lightgrey;
+}
+tr:nth-child(even) td {
+    background-color: white;
+}
+th, td {
+    padding: 10px;
+}

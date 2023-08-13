@@ -6,7 +6,7 @@ function ListItem({ contact, onDelete }) {
       <td>{contact.lastName}</td>
       <td>{contact.email}</td>
       <td>
-        <button onClick={() => onDelete(contact)}>löschen</button>
+        <button onClick={() => onDelete(contact)}>delete</button>
       </td>
     </tr>
   );
