@@ -8,13 +8,13 @@ const PORT = 8000;
 const requestHandler = (request, response) => {
   console.log(`URL: ${request.url}`);
   if (request.url === '/static/html/index.html' || request.url == '/') {
-    console.log('Lade HTML-Datei');
+    console.log('Load HTML file');
     const pathToFile = path.join(__dirname, 'static', 'html', 'index.html');
     fs.readFile(pathToFile, (error, data) => {
       if (error) {
         console.error(error);
         response.writeHead(404);
-        response.end('Error loading the HTML file');
+        response.end('Error loading HTML file');
       } else {
         response.setHeader('Content-Type', 'text/html');
         response.writeHead(200);
@@ -28,7 +28,7 @@ const requestHandler = (request, response) => {
       if (error) {
         console.error(error);
         response.writeHead(404);
-        response.end('Error loading the CSS file');
+        response.end('Error loading CSS file');
       } else {
         response.setHeader('Content-Type', 'text/css');
         response.writeHead(200);
@@ -37,12 +37,12 @@ const requestHandler = (request, response) => {
     });
   } else {
     response.writeHead(404);
-    response.end('Error loading the CSS file');
+    response.end('Error loading CSS file');
   }
 };
 
 const server = http.createServer(requestHandler);
 
 server.listen(PORT, HOST, () => {
-  console.log(`Webserver running at http://${HOST}:${PORT}`);
+  console.log(`Web server running at http://${HOST}:${PORT}`);
 });

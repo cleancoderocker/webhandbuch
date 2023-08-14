@@ -13,5 +13,5 @@ app.get('/', (request, response) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Webserver läuft unter http://${HOST}:${PORT}`);
+  console.log(`Web server running at http://${HOST}:${PORT}`);
 });

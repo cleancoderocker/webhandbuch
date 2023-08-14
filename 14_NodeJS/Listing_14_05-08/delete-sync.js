@@ -2,14 +2,14 @@ const fs = require('fs');
 
 try {
   fs.writeFileSync('output.txt', 'Hello World');
-  console.log('Datei erstellt');
+  console.log('File created');
 } catch (error) {
   console.error(erro);
 }
 
 try {
   fs.unlinkSync('output.txt');
-  console.log('Datei wieder gelöscht');
+  console.log('File deleted again');
 } catch (error) {
   console.error(erro);
 }

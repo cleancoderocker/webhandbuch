@@ -4,11 +4,11 @@ fs.writeFile('output.txt', 'Hello World', (error) => {
   if (error) {
     return console.error(error);
   }
-  console.log('Datei erstellt');
+  console.log('File created');
   fs.unlink('output.txt', (error) => {
     if (error) {
       return console.error(error);
     }
-    console.log('Datei wieder gelöscht');
+    console.log('File deleted again');
   });
 });

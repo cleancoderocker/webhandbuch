@@ -1,27 +1,23 @@
-// Modul einbinden
+// Include module
 const http = require('http');
-
-// Konstanten definieren
+// Define constants
 const HOST = 'localhost';
 const PORT = 8000;
-
-// Request-Handler, der HTTP-Anfragen entgegennimmt
+// Request handler that accepts HTTP requests
 const requestHandler = (request, response) => {
-  // HTTP Response-Header definieren
+  // Define HTTP response header
   response.writeHead(200, {
     'Content-Type': 'text/plain',
   });
-  // HTTP Response-Body definieren
-  response.write('Hallo Welt');
-  // HTTP beenden und abschicken
+  // Define HTTP response body
+  response.write('Hello world');
+  // Exit HTTP and submit
   response.end();
 };
-
-// HTTP-Server mit Request-Handler initialisieren
+// Initialize HTTP server with request handler
 const server = http.createServer(requestHandler);
-
-// HTTP-Server starten
+// Start HTTP server
 server.listen(PORT, HOST, () => {
-  // HTTP-Server gestartet
-  console.log(`Webserver läuft unter http://${HOST}:${PORT}`);
+  // HTTP server started
+  console.log(`Web server running at http://${HOST}:${PORT}`);
 });
