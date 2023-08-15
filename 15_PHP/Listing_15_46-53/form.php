@@ -169,7 +169,7 @@ if ( ! empty( $_POST ) ) {
     }
 
     if ( count( $errorFields ) > 0 ) {
-        echo '<p><strong>Bitte füllen Sie die folgenden Felder aus: '
+        echo '<p><strong>Please fill out the following fields: '
              . implode( ', ', $errorFields )
              . '!</strong></p>';
     } else {
@@ -179,14 +179,14 @@ if ( ! empty( $_POST ) ) {
 
         $mailSent = mail(
             'info@example.com',
-            'Mail vom Anmeldeformular',
+            'Mail from registration form',
             wordwrap( $message, 70, "\r\n" )
         );
 
         if ( ! $mailSent ) {
-            echo '<p><strong>Leider konnte die E-Mail nicht versandt werden.</strong></p>';
+            echo '<p><strong>Unfortunately, the email could not be sent.</strong></p>';
         } else {
-            echo '<p><strong>E-Mail wurde versandt!</strong></p>';
+            echo '<p><strong>Email has been sent!</strong></p>';
         }
     }
 }
