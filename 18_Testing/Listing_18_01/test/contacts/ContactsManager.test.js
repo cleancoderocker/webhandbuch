@@ -1,20 +1,16 @@
 const ContactsManager = require('../../src/contacts/ContactsManager');
-
 test('addContact() should add a contact', async () => {
-  // Setup-Phase
+  // Setup phase
   const contactsManager = new ContactsManager();
   const contact = {
-    firstName: 'Max',
-    lastName: 'Mustermann',
-    email: 'max.mustermann@example.com',
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@example.com',
   };
-
-  // Execute-Phase
+  // Execute phase
   await contactsManager.addContact(contact);
-
-  // Verify-Phase
+  // Verify phase
   const numberOfContacts = contactsManager._contacts.size;
   expect(numberOfContacts).toBe(1);
-
-  // Teardown-Phase
+  // Teardown phase
 });
