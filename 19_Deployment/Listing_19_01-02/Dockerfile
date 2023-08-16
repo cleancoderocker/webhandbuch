@@ -1,26 +1,20 @@
-# Definieren des Basis Docker Images
+# Define the base Docker image
 FROM node:14
-
-# Erstellen des Anwendungsverzeichnisses
+# Create the application directory
 WORKDIR /usr/src/app
-
-# Kopieren der Konfigurationsdateien
-# package.json und package-lock.json
+# Copy the configuration files
+# package.json and package-lock.json
 COPY package*.json ./
-
-# Installieren der Abhängigkeiten
+# Install the dependencies
 RUN npm install
-# Alternativ im Produktivsystem:
+# Alternatively in the production system:
 # RUN npm install --production
-
-# Kopieren der Quelltextdateien
+# Copy the source code files
 COPY . .
-
-# Freigeben des Ports, unter dem der 
-# Express-Server läuft
+# Release the port at which the
+# Express server is running
 EXPOSE 8001
-
-# Starten des definierten npm-Scripts
-CMD [ "npm", "start" ]
-# Alternativ Starten im Debug-Modus
-# CMD [ "npm", "start:debug" ]
+# Start the defined npm script
+CMD [ “npm”, “start” ]
+# Alternatively start in debug mode
+# CMD [ “npm”, “start:debug” ]
