@@ -1,25 +1,24 @@
 const person = {
-	"firstname": "Max",
-	"lastname": "Mustermann",
+	"firstname": "John",
+	"lastname": "Doe",
 	"phone": {
-	  "type": "mobile",
-	  "number": "01234567"
+		"type": "cell",
+		"number": "01234567"
 	},
-	"email": "max.mustermann@example.com",
+	"email": "peter.doe@example.com",
 	"address": {
-	  "street": "Musterstraße",
-	  "number": 99,
-	  "code": "12345",
-	  "city": "Musterstadt"
+		"street": "Sample Street",
+		"number": 99,
+		"code": "12345",
+		"city": "Sample City"
 	}
-};  
-
-console.log(person.firstname);      // "Max"
-console.log(person.lastname);       // "Mustermann"
-console.log(person.phone.type);     // "mobile"
-console.log(person.phone.number);   // "01234567"
-console.log(person.email);          // "max.mustermann@example.com"
-console.log(person.address.street); // "Musterstraße"
+};
+console.log(person.firstname); 		// "John"
+console.log(person.lastname); 		// "Doe"
+console.log(person.phone.type); 	// "cell"
+console.log(person.phone.number); 	// "01234567"
+console.log(person.email); 			// "john.doe@example.com"
+console.log(person.address.street); // "Sample Street"
 console.log(person.address.number); // 99
-console.log(person.address.code);   // "12345"
-console.log(person.address.city);   // "Musterstadt"
+console.log(person.address.code); 	// "12345"
+console.log(person.address.city); 	// "Sample City"

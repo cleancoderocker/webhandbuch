@@ -1,29 +1,34 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="contacts">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="contact" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="firstname"/>
-              <xs:element type="xs:string" name="lastname"/>
+              <xs:element type="xs:string" name="firstname" />
+              <xs:element type="xs:string" name="lastname" />
               <xs:element name="phone">
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:int">
-                      <xs:attribute type="xs:string" name="type" use="optional"/>
+                      <xs:attribute
+                        type="xs:string"
+                        name="type"
+                        use="optional"
+                      />
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
               </xs:element>
-              <xs:element type="xs:string" name="email"/>
+              <xs:element type="xs:string" name="email" />
               <xs:element name="address">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element type="xs:string" name="street"/>
-                    <xs:element type="xs:int" name="number"/>
-                    <xs:element type="xs:string" name="code"/>
-                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="street" />
+                    <xs:element type="xs:int" name="number" />
+                    <xs:element type="xs:string" name="code" />
+                    <xs:element type="xs:string" name="city" />
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

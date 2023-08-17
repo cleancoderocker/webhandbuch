@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<contacts xmlns="https://xml.webhandbuch.de"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://xml.webhandbuch.de
-  https://www.webhandbuch.de/schema.xsd"
->
+<contacts>
   <contact>
-    <firstname>Max</firstname>
-    <lastname>Mustermann</lastname>
-    <phone type="mobile">01234567</phone>
-    <email>max.mustermann@example.com</email>
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <phone type="cell">01234567</phone>
+    <email>john.doe@example.com</email>
     <address>
-      <street>Musterstraße</street>
+      <street>Sample Street</street>
       <number>99</number>
       <code>12345</code>
-      <city>Musterstadt</city>
+      <city>Sample City</city>
     </address>
   </contact>
   <contact>
     <firstname>Paula</firstname>
-    <lastname>Mustermann</lastname>
-    <phone type="mobile">01234567</phone>
-    <email>paula.mustermann@example.com</email>
+    <lastname>Doe</lastname>
+    <phone type="cell">01234567</phone>
+    <email>paula.doe@example.com</email>
     <address>
-      <street>Musterstraße</street>
+      <street>Sample Street</street>
       <number>99</number>
       <code>12345</code>
-      <city>Musterstadt</city>
+      <city>Sample City</city>
     </address>
   </contact>
   <contact>
     <firstname>Peter</firstname>
-    <lastname>Mustermann</lastname>
+    <lastname>Doe</lastname>
     <phone type="landline">3456789</phone>
-    <email>peter.mustermann@example.com</email>
+    <email>peter.doe@example.com</email>
     <address>
-      <street>Musterstraße</street>
+      <street>Sample Street</street>
       <number>200</number>
       <code>12345</code>
-      <city>Musterstadt</city>
+      <city>Sample City</city>
     </address>
   </contact>
 </contacts>

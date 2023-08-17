@@ -1,48 +1,48 @@
 {
   "contacts": [
     {
-      "firstname": "Max",
-      "lastname": "Mustermann",
+      "firstname": "John",
+      "lastname": "Doe",
       "phone": {
-        "type": "mobile",
+        "type": "cell",
         "number": "01234567"
       },
-      "email": "max.mustermann@example.com",
+      "email": "john.doe@example.com",
       "address": {
-        "street": "Musterstraße",
+        "street": "Sample Street",
         "number": 99,
         "code": "12345",
-        "city": "Musterstadt"
+        "city": "Sample City"
       }
     },
     {
       "firstname": "Paula",
-      "lastname": "Mustermann",
+      "lastname": "Doe",
       "phone": {
-        "type": "mobile",
+        "type": "cell",
         "number": "01234567"
       },
-      "email": "paula.mustermann@example.com",
+      "email": "paula.doe@example.com",
       "address": {
-        "street": "Musterstraße",
+        "street": "Sample Street",
         "number": 99,
         "code": "12345",
-        "city": "Musterstadt"
+        "city": "Sample City"
       }
     },
     {
       "firstname": "Peter",
-      "lastname": "Mustermann",
+      "lastname": "Doe",
       "phone": {
         "type": "landline",
         "number": "3456789"
       },
-      "email": "max.mustermann@example.com",
+      "email": "peter.doe@example.com",
       "address": {
-        "street": "Musterstraße",
+        "street": "Sample Street",
         "number": 200,
         "code": "12345",
-        "city": "Musterstadt"
+        "city": "Sample City"
       }
     }
   ]
