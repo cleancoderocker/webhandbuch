@@ -13,5 +13,5 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 app.get('/examples', (request, response) => {
-    res.json({ msg: 'Hello World mit CORS' })
+    response.json({ msg: 'Hello World with CORS' })
 })

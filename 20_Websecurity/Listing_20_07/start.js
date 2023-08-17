@@ -7,8 +7,8 @@ const PORT = 3001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Konfiguration von CSP
-// Muss vor dem nächsten app.use() stehen!
+// Configuration of CSP
+// Must be placed before the next app.use()!
 app.use(
 	helmet.contentSecurityPolicy({
     directives: {
@@ -19,14 +19,8 @@ app.use(
   })
 );
 
-// Statische Dateien im "public" Verzeichnis bereitstellen
+// Provide static files in the "public" directory
 app.use(express.static("public"));
-
-// API für Entgegennehmen der Violation Reports
-app.post(`/api/csp/report`, (request, response) => {
-  console.log(`CSP header violation`, request.body);
-  response.status(204).end();
-});
 
 app.listen(PORT, (error) => {
   if (error) {
