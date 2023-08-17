@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formatting Tables</title>
+  <style type="text/css">
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    table {
+      /* Thin, solid, black border */
+      border: thin solid #000000;
+      /* Alternative, but more typing work: */
+      /*
+border-width: thin;
+border-style: solid;
+border-color: #000000;
+*/
+      /* Alternative, but even more typing work: */
+      /*
+border-top-width: thin;
+border-right-width: thin;
+border-bottom-width: thin;
+border-left-width: thin;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #000000;
+border-right-color: #000000;
+border-bottom-color: #000000;
+border-left-color: #000000;
+*/
+      /* No double borders
+for adjacent cells */
+      border-collapse: collapse;
+    }
+
+    /* Table headers */
+    th {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: left;
+    }
+
+    /* Table headers and cells */
+    th,
+    td {
+      padding: 11px;
+    }
+
+    /* Odd rows */
+    tr:nth-child(odd) {
+      background-color: #CCCCCC;
+    }
+
+    /* Even rows */
+    tr:nth-child(even) {
+      background-color: #FFFFFF;
+    }
+
+    /* First column of table */
+    td:first-child {
+      font-weight: bold;
+    }
+
+    /* Second column of table */
+    td:nth-child(2) {
+      font-style: italic;
+    }
+
+    /* Third column of table */
+    td:nth-child(3) {
+      text-align: right;
+    }
+  </style>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1>Recommended books on CSS</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Title</th>
+        <th>Year of publication</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Keith J. Grant
+        </td>
+        <td>
+          CSS in Depth
+        </td>
+        <td>2018</td>
+      </tr>
+      <tr>
+        <td>
+          Eric A. Meyer
+        </td>
+        <td>
+          CSS Pocket Reference: Visual Presentation for the Web
+        </td>
+        <td>2018</td>
+      </tr>
+      <tr>
+        <td>
+          Eric Meyer & Estelle Weyl
+        </td>
+        <td>
+          CSS: The Definitive Guide: Visual Presentation for the Web
+        </td>
+        <td>2017</td>
+      </tr>
+      <tr>
+        <td>
+          Lea Verou
+        </td>
+        <td>
+          CSS Secrets: Better Solutions to Everyday Web Design Problems
+        </td>
+        <td>2014</td>
+      </tr>
+      <tr>
+        <td>
+          Peter Gasston
+        </td>
+        <td>
+          The Book of CSS3: A Developer's Guide to the Future of Web Design
+        </td>
+        <td>2014</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

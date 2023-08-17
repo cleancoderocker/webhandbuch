@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Formulare gestalten</title>
+  <title>Design Forms</title>
   <style type="text/css">
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +29,7 @@
       padding: 0.8em;
       border: 0;
     }
-    
+
     form button:hover {
       background: deepskyblue;
     }
@@ -56,43 +57,41 @@
     .form-row {
       display: flex;
       justify-content: flex-end;
-   }
+    }
 
-    .form-row > label {
+    .form-row>label {
       flex: 1;
     }
 
-    .form-row > input {
+    .form-row>input {
       flex: 2;
     }
-
   </style>
+  <meta charset="UTF-8">
 </head>
+
 <body>
   <form>
     <div class="form-row">
       <label for="firstName">First name</label>
       <input id="firstName" type="text">
     </div>
- 
     <div class="form-row">
       <label for="lastName">Last name</label>
       <input id="lastName" type="text">
     </div>
-    
     <div class="form-row">
       <label for="birthday">Birth date</label>
       <input id="birthday" type="date">
     </div>
- 
     <div class="form-row">
-      <label for="email">E-Mail</label>
+      <label for="mail">Email:</label>
       <input id="email" type="email">
     </div>
-    
     <div class="form-row">
       <button>Send</button>
     </div>
   </form>
 </body>
+
 </html>

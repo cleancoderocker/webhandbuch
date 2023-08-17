@@ -1,137 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Schriften formatieren</title>
+  <title>Formatting Fonts</title>
   <style type="text/css">
-  body {
-    font-family: 'Times New Roman', Times, serif;
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      /* line height 1.5 times the normal font size */
+      line-height: 1.5em;
+    }
 
-    /* Zeilenhöhe 1.5-fach der normalen Schriftgröße  */
-    line-height: 1.5em;
-  }
+    h1,
+    h2 {
+      font-family: Arial;
+      /* character spacing 0.2 times the normal font size */
+      letter-spacing: 0.2em;
+      /* character spacing 0.3 times the normal font size */
+      word-spacing: 0.3em;
+    }
 
-  h1, h2 {
-    font-family: Arial;
+    h1 {
+      /* 150% of the regular font size */
+      font-size: 150%;
+    }
 
-    /* Zeichenabstand 0.2-fach der normalen Schriftgröße  */
-    letter-spacing: 0.2em;
+    h2 {
+      /* 100% of the normal font size */
+      font-size: 100%;
+      /* all uppercase letters */
+      text-transform: uppercase;
+      /* text underlined */
+      text-decoration: underline;
+    }
 
-    /* Zeichenabstand 0.3-fach der normalen Schriftgröße  */
-    word-spacing: 0.3em;
-  }
+    p {
+      /* Justification */
+      text-align: justify;
+    }
 
-  h1 {
-    /* 150% der normalen Schriftgröße */
-    font-size: 150%;
-  }
+    ul li {
+      font-family: 'Courier New', Courier, monospace;
+    }
 
-  h2 {
-    /* 200% der normalen Schriftgröße */
-    font-size: 100%;
+    /* Links */
+    a:link {
+      color: blue;
+    }
 
-    /* alles in Großbuchstaben */
-    text-transform: uppercase;
+    /* Already visited links */
+    a:visited {
+      color: green;
+    }
 
-    /* Text unterstrichen */
-    text-decoration: underline;
-  }
+    /* Links that are currently "touched" with the mouse */
+    a:hover {
+      color: black;
+      background-color: orange;
+    }
 
-  p {
-    /* Blocksatz */
-    text-align: justify;
-  }
+    /* Links that are currently being clicked on */
+    a:active {
+      color: red;
+    }
 
-  ul li {
-    font-family: 'Courier New', Courier, monospace;
-  }
+    .introduction {
+      /* italics */
+      font-style: italic;
+      /* Bold font */
+      font-weight: bold;
+    }
 
-  /* Links */
-  a:link {
-    color: blue;
-  }
+    .author {
+      font-family: Verdana;
+      /* line height 0.3 times the normal font size */
+      line-height: 0.3em;
+      /* text right-aligned */
+      text-align: right;
+    }
 
-  /* Bereits besuchte Links */
-  a:visited {
-    color: green;
-  }
-
-  /* Links, die gerade mit der Maus "berührt" werden */
-  a:hover {
-    color: black;
-    background-color: orange;
-  }
-
-  /* Links, die gerade geklickt werden */
-  a:active {
-    color: red;
-  }
-
-  .introduction {
-    /* Kursivschrift */
-    font-style: italic;
-
-    /* Fettschrift */
-    font-weight: bold;
-  }
-
-  .author {
-    font-family: Verdana;
-
-    /* Zeilenhöhe 0.3-fach der normalen Schriftgröße  */
-    line-height: 0.3em;
-
-    /* Text rechts ausgerichtet */
-    text-align: right;
-  }
-
-  .date {
-    font-family: 'Courier New', Courier, monospace;
-
-    /* Zeilenhöhe 0.3-fach der normalen Schriftgröße  */
-    line-height: 0.3em;
-
-    /* Text rechts ausgerichtet */
-    text-align: right;
-  }
+    .date {
+      font-family: 'Courier New', Courier, monospace;
+      /* line height 0.3 times the normal font size */
+      line-height: 0.3em;
+      /* text right-aligned */
+      text-align: right;
+    }
   </style>
+  <meta charset="UTF-8">
 </head>
+
 <body>
-<h1>Blog posts</h1>
-<article>
-  <h2>New website</h2>
-  <p class="introduction">
-    Dear readers,
-  </p>
-  <p>
-    From now on you will find the blogs for my books combined on this website. In this way, you are always kept up to date at a single central point when it comes to updates about the books mentioned or general information, tutorials, etc. about web and software development.
-  </p>
-  <p>
-    You can also find news and updates in short microblogging form on Twitter:
-  </p>
-  <p>
+  <h1>Blog posts</h1>
+  <article>
+    <h2>New website</h2>
+    <p class="introduction">Dear readers,
+    </p>
+    <p>From now on you will find the blogs about my books combined on this website. In this way,
+      you are always kept up to date at a single central point when it comes to updates about the books mentioned or
+      general information,
+      tutorials etc. about web and software development. </p>
+    <p>You can also find news and updates in short microblogging short form on Twitter: </p>
+    <p>
     <ul>
-      <li>
-          <a href="https://twitter.com/cleancoderocker">@cleancoderocker</a>
-      </li>
-      <li>
-          <a href="https://twitter.com/webdevhandbuch">@webdevhandbuch</a>
-      </li>
-      <li>
-          <a href="https://twitter.com/nodejskochbuch">@nodejskochbuch</a>
-      </li>
-      <li>
-          <a href="https://twitter.com/jshandbuch">@jshandbuch</a>
-      </li>
-      <li>
-          <a href="https://twitter.com/jsprofibuch">@jsprofibuch</a>
-      </li>
+      <li><a href="https://twitter.com/cleancoderocker">@cleancoderocker</a></li>
+      <li><a href="https://twitter.com/webdevhandbuch">@webdevhandbuch</a></li>
+      <li><a href="https://twitter.com/nodejskochbuch">@nodejskochbuch</a></li>
+      <li><a href="https://twitter.com/jshandbuch">@jshandbuch</a></li>
+      <li><a href="https://twitter.com/jsprofibuch">@jsprofibuch</a></li>
     </ul>
-  </p>
-  <p>
-    Have fun with it!
-  </p>
-  <p class="author">Philip Ackermann</p>
-  <p class="date">May 2020</p>
-</article>
+    </p>
+    <p>Have fun with it ! </p>
+    <p class="author">Philip Ackermann</p>
+    <p class="date">May 2020</p>
+  </article>
 </body>
+
 </html>
