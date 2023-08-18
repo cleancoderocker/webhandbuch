@@ -33,8 +33,8 @@ function List() {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
+            <th>First name</th>
+            <th>Last name</th>
             <th>Email</th>
             <th></th>
           </tr>

@@ -3,15 +3,15 @@ import { useState } from 'react';
 const initialContacts = [
   {
     id: 1,
-    firstName: 'Max',
-    lastName: 'Mustermann',
-    email: 'maxmustermann@example.com',
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'johndoe@example.com',
   },
   {
     id: 2,
-    firstName: 'Erika',
-    lastName: 'Mustermann',
-    email: 'erikamustermann@example.com',
+    firstName: 'Erica',
+    lastName: 'Doe',
+    email: 'ericadoe@example.com',
   },
 ];
 
@@ -22,9 +22,9 @@ function List() {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Vorname</th>
-          <th>Nachname</th>
-          <th>E-Mail</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody>

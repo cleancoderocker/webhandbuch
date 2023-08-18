@@ -2,15 +2,15 @@
   "contacts": [
     {
       "id": 1,
-      "firstName": "Max",
-      "lastName": "Mustermann",
-      "email": "maxmustermann@example.com"
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com"
     },
     {
       "id": 2,
-      "firstName": "Erika",
-      "lastName": "Mustermann",
-      "email": "erikamustermann@example.com"
+      "firstName": "Erica",
+      "lastName": "Doe",
+      "email": "ericadoe@example.com"
     }
   ]
 }
