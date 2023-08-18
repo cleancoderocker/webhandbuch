@@ -68,7 +68,7 @@ function Form() {
         />
       </label>
       <button type="submit">speichern</button>
-      <Link to="/list">Abbrechen</Link>
+      <Link to="/list">Cancel</Link>
     </form>
   );
 }

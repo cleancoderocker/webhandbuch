@@ -49,7 +49,7 @@ function List() {
           ))}
         </tbody>
       </table>
-      <Link to="/form">Neu</Link>
+      <Link to="/form">New</Link>
     </>
   );
 }
