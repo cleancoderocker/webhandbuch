@@ -2,25 +2,26 @@
 <html>
 
 <head>
-  <title>Anmeldeformular</title>
+  <title>Registration form</title>
 </head>
 
 <body>
   <form action="/services/handle-form" method="POST">
     <fieldset>
-      <legend>Angaben zur Person</legend>
+      <legend>Personal details</legend>
       <label>
-        Vorname:
-        <input type="text" name="firstname" size="20" maxlength="50" /> </label>
+        First name:
+        <input type="text" name="firstname" size="20" maxlength="50" />
+      </label>
       <br />
       ...
     </fieldset>
     <br />
     <fieldset>
-      <legend>Fragebogen</legend>
+      <legend>Questionnaire</legend>
       <p>
         <label for="browser">
-          Welchen Browser nutzen Sie?
+          Which browser do you use?
         </label>
         <select id="browser" name="browser">
           <option value="chrome">Google Chrome</option>
@@ -31,21 +32,21 @@
         </select>
       </p>
       <p>
-        Gefällt Ihnen unsere Website?
+        Do you like our website?
         <br />
         <label>
           <input type="radio" name="feedback" value="yes" />
-          Ja
+          Yes
         </label>
         <label>
           <input type="radio" name="feedback" value="no" />
-          Nein
+          No
         </label>
       </p>
       <p>
         <br />
         <label for="improvements">
-          Haben Sie Verbesserungsvorschläge?
+          Do you have any suggestions for improvement?
         </label>
         <br />
         <textarea id="improvements" rows="5" cols="50"> </textarea>
@@ -53,11 +54,11 @@
       <p>
         <label>
           <input type="checkbox" name="newsletter" />
-          Möchten Sie sich für unseren Newsletter anmelden?
+          Would you like to subscribe to our newsletter?
         </label>
       </p>
     </fieldset>
-    <input type="submit" value="Formular abschicken" />
+    <input type="submit" value="Submit form" />
   </form>
 </body>
 
