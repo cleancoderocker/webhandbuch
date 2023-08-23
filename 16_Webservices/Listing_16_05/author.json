@@ -3,24 +3,24 @@
   "lastName": "Ackermann",
   "books": [
     {
-      "title": "Schrödinger programmiert Java",
-      "href": "https://www.philipackermann.de/api/books/1"
+      "title": "Schroedinger programs Java",
+      "href": "https://www.cleancoderocker.com/api/books/1"
     },
     {
       "title": "Professionell entwickeln mit JavaScript",
-      "href": "https://www.philipackermann.de/api/books/2"
+      "href": "https://www.cleancoderocker.com/api/books/2"
     },
     {
-      "title": "JavaScript - Das umfassende Handbuch",
-      "href": "https://www.philipackermann.de/api/books/3"
+      "title": "JavaScript - The Comprehensive Guide",
+      "href": "https://www.cleancoderocker.com/api/books/3"
     },
     {
-      "title": "Node.js – Rezepte und Lösungen",
-      "href": "https://www.philipackermann.de/api/books/4"
+      "title": "Node.js - Recipes and Solutions",
+      "href": "https://www.cleancoderocker.com/api/books/4"
     },
     {
-      "title": "Webentwicklung - Das Handbuch für Fullstack-Entwickler",
-      "href": "https://www.philipackermann.de/api/books/5"
+      "title": "Web Development - The Full Stack Developer's Guide",
+      "href": "https://www.cleancoderocker.com/api/books/5"
     }
   ]
 }

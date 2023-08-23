@@ -61,5 +61,5 @@ app.delete('/api/contacts/:id', async (request, response) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Webservice läuft unter http://${HOST}:${PORT}`);
-});
+  console.log(`Web service runs at http://${HOST}:${PORT}`);
+  });

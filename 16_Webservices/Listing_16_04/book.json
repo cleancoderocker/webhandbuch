@@ -1,10 +1,10 @@
 {
   "id": "4",
   "isbn": "978-3-8362-6453-2",
-  "title": "Node.js – Rezepte und Lösungen",
+  "title": "Node.js - Recipes and Solutions",
   "author": {
     "firstName": "Philip",
     "lastName": "Ackermann",
-    "href": "https://www.philipackermann.de/api/authors/1"
+    "href": "https://www.cleancoderocker.com/api/authors/1"
   }
 }
