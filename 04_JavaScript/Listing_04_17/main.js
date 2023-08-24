@@ -1,7 +1,5 @@
-let i = 1; do {   // Initialisierung
-  console.log(i); // Anweisung
-  i++;            // Inkrementierung
-} while (i <= 10) // Bedingung
-
-
-
+let i = 1;        // Initialization
+do {
+  console.log(i); // Statement
+  i++;            // Increment
+} while (i <= 10) // Condition

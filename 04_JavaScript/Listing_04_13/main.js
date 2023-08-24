@@ -2,10 +2,10 @@ let passwordTooShort = password.length < 10;
 let passwordTooLong = password.length > 50;
 let message = '';
 if (passwordTooShort) {
-  message = 'Das Passwort muss mindestens 10 Zeichen enthalten.';
+  message = 'The password must contain at least 10 characters.';
 } else if (passwordTooLong) {
-  message = 'Das Passwort darf maximal 50 Zeichen enthalten.';
+  message = 'The password must not contain more than 50 characters.';
 } else {
-  message = 'Das Passwort erfüllt alle Bedingungen.';
+  message = 'The password meets all conditions.';
 }
 document.getElementById('info').textContent = message;

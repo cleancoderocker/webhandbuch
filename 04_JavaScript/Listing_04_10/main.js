@@ -1,4 +1,4 @@
-const firstName = 'Max';         // einfache Anführungszeichen
-const lastName = "Mustermann";   // doppelte Anführungszeichen
-const age = "22";                // keine Zahl, sondern Zeichenkette 
-// const street = 'Musterstraße";   // Syntaxfehler: Mischform
+const firstName = 'John';           // single quotes
+const lastName = "Doe";             // double quotes
+const age = "22";                   // not a number, but a string
+// const street = 'Sample Street";  // syntax error: mixed form

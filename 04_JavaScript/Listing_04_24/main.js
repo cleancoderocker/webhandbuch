@@ -1,15 +1,16 @@
 function checkPassword(password) {
     if (password.length < 10) {
-        throw new Error('Das Passwort muss mindestens 10 Zeichen enthalten.');
+        throw new Error('The password must contain at least 10 characters.');
     } else if (password.length > 50) {
-        throw new Error('Das Passwort muss mindestens 10 Zeichen enthalten.');
+        throw new Error('The password must not contain more than 50 characters.');
     }
-    return 'Das Passwort erfüllt alle Bedingungen.';
+    return 'The password meets all conditions.';
 }
 try {
     const password = 'simple';
     checkPassword(password);
-    const message = 'Das Passwort erfüllt alle Bedingungen.'; // ... hier weitere Verarbeitung ...
+    const message = 'The password meets all conditions.';
+    // ... here further processing ...
 } catch (error) {
-    console.error(error)
+    console.error(error);
 }
