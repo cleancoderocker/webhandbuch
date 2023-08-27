@@ -1,4 +1,4 @@
-/* @each-Schleife */
+/* @each loop */
 .icon-error {
   background-image: url("/icons/error.png");
 }
@@ -11,7 +11,7 @@
   background-image: url("/icons/info.png");
 }
 
-/* @for-Schleife */
+/* @for loop */
 .column-i-1 {
   width: 100%;
 }
@@ -56,7 +56,7 @@
   width: 16.6666666667%;
 }
 
-/* @while-Schleife */
+/* @while loop */
 .width-0 {
   width: 0px;
 }

@@ -14,7 +14,7 @@ $value-list: (
 
 @each $values in $value-list {
   $sum: sum($values...);
-  @debug(Die Variable $sum hat aktuell diesen Wert: $sum);
+  @debug(The variable $sum has currently this value: $sum);
   .width-#{$sum} {
     width: $sum;
   } 

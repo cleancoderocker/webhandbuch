@@ -4,15 +4,16 @@ $secondary-color: #999999;
 
 ul {
   font-family: $font;
+
   li {
-    /* 1. Verschachtelung */
+    /* 1. Nesting */
     background-color: $primary-color;
     line-height: 50px;
+
     li {
-      /* 2. Verschachtelung */
-      background-color:$secondary-color;
+      /* 2. Nesting */
+      background-color: $secondary-color;
       line-height: 50px;
-     }
+    }
   }
 }
-

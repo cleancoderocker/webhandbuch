@@ -1,10 +1,8 @@
-// Importieren der benötigten Sass-Module
+// Importing the required Sass modules
 @use "sass:color";
 @use "sass:math";
 @use "sass:string";
-
-// Verwendung einer Funktion
-// aus dem "sass:color"-Modul
+// Using a function from the "sass:color" module
 $color1: #ffff00;
 $color2: #0000ff;
 
@@ -12,8 +10,7 @@ h1 {
   background-color: color.mix($color1, $color2);
 }
 
-// Verwendung einer Funktion
-// aus dem "sass:math"-Modul
+// Using a function from the "sass:math" module
 $width1: 200px;
 $width2: 500px;
 
@@ -21,8 +18,7 @@ $width2: 500px;
   width: math.max($width1, $width2);
 }
 
-// Verwendung einer Funktion
-// aus dem "sass:string"-Modul
+// Using a function from the "sass:string" module
 $fontFamily: Verdana;
 
 body {

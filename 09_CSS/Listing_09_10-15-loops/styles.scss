@@ -1,13 +1,13 @@
 $icons: error, warning, info;
 
-/* @each-Schleife */
+/* @each loop */
 @each $icon in $icons {
   .icon-#{$icon} {
     background-image: url('/icons/#{$icon}.png');
   }   
 }
 
-/* @for-Schleife */
+/* @for loop */
 @for $i from 1 to 6 {
   .column-i-#{$i} {
     width: calc(100% / $i);
@@ -20,7 +20,7 @@ $icons: error, warning, info;
   }
 }
 
-/* @while-Schleife */
+/* @while loop */
 $counter: 0;
 
 @while $counter < 5 {
